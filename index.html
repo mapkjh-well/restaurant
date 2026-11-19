@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>식당 안내 | 첨단소재·나노융합 혁신융합대학사업단</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        header { text-align: center; margin-bottom: 40px; background: linear-gradient(135deg, #1e4ed8, #2563eb); color: white; padding: 40px 20px; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        header h1 { font-size: 2rem; margin-bottom: 10px; font-weight: 700; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+
+        .notice-banner { background: #eff6ff; border-left: 4px solid var(--primary); padding: 15px 20px; border-radius: 8px; margin-bottom: 30px; font-size: 0.95rem; }
+        .notice-banner strong { color: var(--primary-dark); }
+
+        section { margin-bottom: 40px; }
+        h2 { font-size: 1.5rem; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--border-color); color: var(--text-main); display: flex; align-items: center; gap: 10px; }
+
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); border-radius: 12px; padding: 24px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between; }
+        
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 12px; }
+        .badge.breakfast { background: #fef3c7; color: #d97706; }
+        .badge.lunch { background: #d1fae5; color: #059669; }
+        .badge.dinner { background: #ede9fe; color: #7c3aed; }
+
+        .card h3 { font-size: 1.25rem; margin-bottom: 10px; color: var(--text-main); }
+        .menu-box { background: #f1f5f9; padding: 10px 14px; border-radius: 6px; margin: 10px 0; font-size: 0.95rem; font-weight: bold; color: #333; }
+        .info-list { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px; }
+        .info-list div { margin-bottom: 6px; }
+        .student-notice { color: #e11d48; font-size: 0.85rem; font-weight: 600; margin-top: 5px; }
+        
+        .btn-group { display: flex; gap: 8px; margin-top: 15px; }
+        .btn { flex: 1; text-align: center; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+        .btn-naver { background: #03c75a; color: white; }
+        .btn-naver:hover { background: #02b350; }
+        .btn-kakao { background: #fee500; color: #191919; }
+        .btn-kakao:hover { background: #fdd800; }
+
+        @media (max-width: 768px) {
+            .grid-3 { grid-template-columns: 1fr; }
+            header h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>행사 기간 식당 안내</h1>
+            <p>첨단소재·나노융합 혁신융합대학사업단 | 조식 · 중식 · 석식 지정 식당 안내 페이지</p>
+        </header>
+
+        <div class="notice-banner">
+            <strong>💡 식당 이용 공통 수칙:</strong> 식당 방문 시 <strong>'첨단소재(중앙대)'</strong>를 말씀하시고, 명부에 소속·성명을 작성한 뒤 지정 메뉴 중 택1을 이용해 주세요.
+        </div>
+
+        <!-- 조식 식당 섹션 -->
+        <section>
+            <h2>🍳 조식 식당 (1곳)</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div>
+                        <span class="badge breakfast">조식</span>
+                        <h3>브로샌드위치</h3>
+                        <div class="menu-box">메뉴: 햄치즈에그 / 크랜베리 닭가슴살</div>
+                        <div class="info-list">
+                            <div>📍 광주 서구 치평로 2, 1층 104호</div>
+                            <div>🚶 도보 약 15분 (985m)</div>
+                            <div>📞 0507-1498-2577</div>
+                            <div class="student-notice">* 샌드위치 2종 중 택1</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%B9%98%ED%8F%89%EB%A1%9C%202%20%EB%B8%8C%EB%A1%9C%EC%83%8C%EB%93%9C%EC%9C%84%EC%B9%98" target="_blank" class="btn btn-naver">네이버지도</a>
+                        <a href="https://map.kakao.com/?q=%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%B9%98%ED%8F%89%EB%A1%9C%202%20%EB%B8%8C%EB%A1%9C%EC%83%8C%EB%93%9C%EC%9C%84%EC%B9%98" target="_blank" class="btn btn-kakao">카카오맵</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 중식 식당 섹션 -->
+        <section>
+            <h2>🍱 중식 식당 (3곳)</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div>
+                        <span class="badge lunch">중식</span>
+                        <h3>가마솥우정설렁탕갈비탕</h3>
+                        <div class="menu-box">메뉴: 설렁탕 / 갈비탕</div>
+                        <div class="info-list">
+                            <div>📍 전남광주 서구 상무화원로11번길 4</div>
+                            <div>🚶 도보 약 2분 (170m)</div>
+                            <div>📞 062-381-8225</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%ED%99%94%EC%9B%90%EB%A1%9C11%EB%B2%88%EA%B8%B8%204" target="_blank" class="btn btn-naver">네이버지도</a>
+                        <a href="https://map.kakao.com/?q=%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%ED%99%94%EC%9B%90%EB%A1%9C11%EB%B2%88%EA%B8%B8%204" target="_blank" class="btn btn-kakao">카카오맵</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <span class="badge lunch">중식</span>
+                        <h3>일담</h3>
+                        <div class="menu-box">메뉴: 수제 생 등심 돈카츠 / 규동</div>
+                        <div class="info-list">
+                            <div>📍 광주 서구 상무화원로17번길 1, 1층</div>
+                            <div>🚶 도보 약 8분 (507m)</div>
+                            <div>📞 062-381-3788</div>
+                            <div class="student-notice">* 일요일 정기휴무</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%ED%99%94%EC%9B%90%EB%A1%9C17%EB%B2%88%EA%B8%B8%201%20%EC%9D%BC%EB%8B%B4" target="_blank" class="btn btn-naver">네이버지도</a>
+                        <a href="https://map.kakao.com/?q=%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%ED%99%94%EC%9B%90%EB%A1%9C17%EB%B2%88%EA%B8%B8%201%20%EC%9D%BC%EB%8B%B4" target="_blank" class="btn btn-kakao">카카오맵</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <span class="badge lunch">중식</span>
+                        <h3>짬뽕회관 상무점</h3>
+                        <div class="menu-box">메뉴: 대박짬뽕 / 순두부짬뽕밥</div>
+                        <div class="info-list">
+                            <div>📍 광주 서구 상무공원로 1, 1층</div>
+                            <div>🚶 도보 약 10분 (666m)</div>
+                            <div>📞 0507-1379-6632</div>
+                            <div class="student-notice">* 18일 11시·12시 타 단체 예약 → 혼잡</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%EA%B3%B5%EC%9B%90%EB%A1%9C%201%20%EC%BE%B8%EB%BD%95%ED%9A%8C%EA%B4%80" target="_blank" class="btn btn-naver">네이버지도</a>
+                        <a href="https://map.kakao.com/?q=%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%EA%B3%B5%EC%9B%90%EB%A1%9C%201%20%EC%BE%B8%EB%BD%95%ED%9A%8C%EA%B4%80" target="_blank" class="btn btn-kakao">카카오맵</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 석식 식당 섹션 -->
+        <section>
+            <h2>🍲 석식 식당 (3곳)</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div>
+                        <span class="badge dinner">석식</span>
+                        <h3>기호식품</h3>
+                        <div class="menu-box">메뉴: 육개장 / 순대국밥</div>
+                        <div class="info-list">
+                            <div>📍 광주 서구 상무번영로 12</div>
+                            <div>🚶 도보 약 29분 (1.8km)</div>
+                            <div>📞 062-375-9882</div>
+                            <div class="student-notice">* 24시간 영업</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%EB%B2%88%EC%98%81%EB%A1%9C%2012%20%EA%B8%B0%ED%98%B8%EC%8B%9D%ED%92%88" target="_blank" class="btn btn-naver">네이버지도</a>
+                        <a href="https://map.kakao.com/?q=%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%EB%B2%88%EC%98%81%EB%A1%9C%2012%20%EA%B8%B0%ED%98%B8%EC%8B%9D%ED%92%88" target="_blank" class="btn btn-kakao">카카오맵</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <span class="badge dinner">석식</span>
+                        <h3>멘야마쯔리상무점</h3>
+                        <div class="menu-box">메뉴: 라멘 / 마제소바</div>
+                        <div class="info-list">
+                            <div>📍 전남광주 서구 시청로 57 1층</div>
+                            <div>🚶 도보 약 25분 (1.7km)</div>
+                            <div>📞 0507-1341-1988</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%8B%9C%EC%B2%AD%EB%A1%9C%2057%20%EB%A9%98%EC%95%BC%EB%A7%88%EC%AF%94%EB%A6%AC" target="_blank" class="btn btn-naver">네이버지도</a>
+                        <a href="https://map.kakao.com/?q=%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%8B%9C%EC%B2%AD%EB%A1%9C%2057%20%EB%A9%98%EC%95%BC%EB%A7%88%EC%AF%94%EB%A6%AC" target="_blank" class="btn btn-kakao">카카오맵</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <span class="badge dinner">석식</span>
+                        <h3>빛고을진설렁탕</h3>
+                        <div class="menu-box">메뉴: 설렁탕 / 비빔밥 / 해장국</div>
+                        <div class="info-list">
+                            <div>📍 전남광주 서구 상무화원로32번길 9 일층</div>
+                            <div>🚶 도보 약 6분</div>
+                            <div>📞 062-375-3388</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://naver.me/5EaAJNFe" target="_blank" class="btn btn-naver">네이버지도</a>
+                        <a href="https://map.kakao.com/?q=%EA%B4%91%EC%A3%BC%20%EC%84%9C%EA%B5%AC%20%EC%83%81%EB%AC%B4%ED%99%94%EC%9B%90%EB%A1%9C32%EB%B2%88%EA%B8%B8%209" target="_blank" class="btn btn-kakao">카카오맵</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
